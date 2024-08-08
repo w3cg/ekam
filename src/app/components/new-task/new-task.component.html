@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title text-center">Agrega Implementaciones</h4>
+  </div>
+  <div class="card-body">
+    <form #form>
+      <div class="form-group">
+        <label for="">Empresa</label>
+        <input type="text" class="form-control" aria-describedby="title" name="title" [(ngModel)]="newTask.title">
+      </div>
+      <div class="form-group">
+        <label for="">RUC</label>
+        <input type="text" class="form-control" aria-describedby="ruc" name="ruc" [(ngModel)]="newTask.ruc">
+      </div>
+      <div class="form-group">
+        <label for="">Módulo a Implementar</label>
+        <input type="text" class="form-control" aria-describedby="modulo" name="modulo" [(ngModel)]="newTask.modulo">
+      </div>
+      <!-- listar modulos de implementaciones -->
+      <!-- <div>
+        <label for="">Módulos a Implementar</label>
+        <select name="" id="" class="form-control">
+          <option value="user1">walter</option>
+          <option value="user2">aldo</option>
+          <option value="user3">campi</option>
+        </select>
+      </div> -->
+      <div class="form-group">
+        <label for="">Fecha</label>
+        <br>
+        <input type="date" class="form-control" aria-describedby="date" name="date" [(ngModel)]="newTask.date">
+      </div>
+      <div class="form-group">
+        <label for="">Descripción</label>
+        <textarea class="form-control" name="description" [(ngModel)]="newTask.description"></textarea>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-secondary btn-block click" (click)="addTask()">Añadir</button>
+      </div>
+    </form>
+  </div>
+</div>
